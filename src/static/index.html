@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="/logDiv.js" defer></script>
+    <!-- defer属性，在文档解析完成后(DOMContentLoaded, 即生成DOM tree后)执行 -->
+    <style>
+      #box {
+        width: 100px;
+        height: 100px;
+        background-color: red;
+      }
+    </style>
+    <link rel="stylesheet" href="/style3000.css" />
+  </head>
+  <body>
+    <div id="box"></div>
+    <img src="/img.jpg" alt="" />
+    <!-- 图片不会阻塞页面的渲染，取消css的延时，可看到页面先渲染，图片3s后再显示 -->
+
+    <!-- <script>
+      console.log('123123', )
+    </script> -->
+  </body>
+</html>
